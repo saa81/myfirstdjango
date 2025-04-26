@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Моё портфолио</title>
+    <style>
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header {
+    text-align: center;
+    padding: 60px 20px 30px 20px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    color: #1d3557;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #457b9d;
+    margin-top: 10px;
+}
+
+.projects {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px 0;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #457b9d;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #1d3557;
+    width: 100%;
+    color: #f1faee;
+}
+
+footer a {
+    color: #a8dadc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+
 </head>
+
 <body>
-$END$
+    <header>
+        <h1>Привет! Я Веб-разработчик 🚀</h1>
+        <p>Создаю современные сайты и приложения.</p>
+    </header>
+
+    <section class="projects">
+        <h2>Мои проекты</h2>
+        <div class="project-card">
+            <h3>Сайт-портфолио</h3>
+            <p>Минималистичный сайт для презентации своих работ.</p>
+        </div>
+        <div class="project-card">
+            <h3>Интернет-магазин</h3>
+            <p>Полноценный e-commerce проект на Django.</p>
+        </div>
+        <div class="project-card">
+            <h3>Блог-платформа</h3>
+            <p>Современный блог с регистрацией пользователей и комментариями.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Связаться со мной: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </footer>
 </body>
 </html>
